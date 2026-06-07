@@ -2,12 +2,14 @@ import pandas as pd
 import streamlit as st
 import pickle
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
-import requests
 import os
+from sklearn.metrics.pairwise import cosine_similarity
+
 from dotenv import load_dotenv
+
 load_dotenv()
-my_api_key = os.getenv("API_KEY")
+
+my_api_key =  os.getenv("API_KEY") or st.secrets.get("API_KEY")
 
 # print(my_api_key)
 
