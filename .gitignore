@@ -1,0 +1,6 @@
+.env
+.venv
+.virtual_documents
+anaconda_projects
+.ipynb_checkpoints
+similarity.pkl
